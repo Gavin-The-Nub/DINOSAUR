@@ -1,0 +1,105 @@
+    *{
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 130px;
+}
+
+#game{
+  width: 500px;
+  height: 200px;
+  z-index: 100;
+  border:1px solid black;
+  
+}
+
+.background-image{
+  position: fixed;
+}
+
+#character{
+  width: 20px;
+  height: 50px;
+  position: relative;
+  top: 150px;
+  margin-left:30px;
+}
+
+.video{
+  position: relative;
+  width: 100px;
+  height: 43px;
+  left: -35px;
+  margin-left:30px;
+  margin: 0;
+  top: 5px;
+  
+}
+.animate{
+  animation:jump 500ms ;}
+
+@keyframes jump{
+ 0%{top: 80px;}
+ 10%{top: 85px;}
+ 20%{top: 90px;}
+ 30%{top: 100x;}
+ 40%{top:100px}
+ 50%{top: 100px;}
+ 60%{top: 100px;}
+ 65%{top: 100px;}
+ 70%{top: 100px;}
+ 75%{top:100px}
+ 80%{top: 100px;}
+ 90%{top: 140px;}
+ 95%{top: 145px}
+ 100%{top: 150px;}
+}
+
+
+#block{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 480px;
+  top: 130px;
+  animation: block 1s infinite linear;
+}
+
+#block img {
+  width: 20px;
+  height: 20px;
+  transform: scaleX(-1);
+  padding-bottom: 14px;
+}
+
+/* block ang ilalagay sa name ng keyframe na to */
+@keyframes block{
+  0%{left: 480px;}
+  100%{ left:3px;}
+}
+
+
+#counter{
+  position: fixed;
+  display: flex;
+  justify-self: center;
+  margin-left: 450px;
+  padding-top: 25px;
+}
+
+iframe,
+.hilton {
+  height: 50px;
+  width: 60px;
+  border-radius: 45px;
+  margin-left: 5px
+}
+
+marquee{
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
